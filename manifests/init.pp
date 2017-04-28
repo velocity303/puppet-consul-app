@@ -3,9 +3,9 @@ application consul_cluster (
 ) {
   consul_cluster::head {
     datacenter => $datacenter,
-    export     => Consulhead["node-${name}"],
+    export     => Consulhead["${name}"],
   }
   consul_cluster::node {
-    consume => Consulhead["node-${name}"],
+    consume => Consulhead["${name}"],
   }
 }
