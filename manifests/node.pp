@@ -30,7 +30,7 @@ define consul_cluster::node (
   }
 
 }
-Consul_cluster::Node consumes consulhead {
+Consul_cluster::Node consumes Consulhead {
   datacenter  => $datacenter,
   head_ip     => $head_ip,
 }

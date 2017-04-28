@@ -29,7 +29,7 @@ define consul_cluster::head (
   }
 
 }
-Consul_cluster::Head produces consulhead {
+Consul_cluster::Head produces Consulhead {
   datacenter => $datacenter,
   head_ip    => $::ipaddress,
 }
